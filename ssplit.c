@@ -48,7 +48,7 @@ int main(int argc, char** argv) {
   unsigned char buf[1048576] = { 0 };
   size_t count = sz;
   int ordinal = 1;
-  char* prefix = 4 == argc ? argv[3] : NULL;
+  char* prefix = 4 == argc ? replace(argv[3], "\\n", "\n") : NULL;
 
   FILE* prgm = NULL;
 
