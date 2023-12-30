@@ -11,7 +11,6 @@ char* replace(const char* orig, const char* param, const char* arg) {
 
   for(int i = 0; '\0' != orig[i]; i++) {
     if(strstr(&orig[i], param) == &orig[i]) {
-      fprintf(stderr, "%s\n", "bar3");
       cnt++;
       i += plen - 1;
     }
